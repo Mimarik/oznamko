@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#x273d;</title>
+    <style>
+        @font-face {
+            font-family: Beech;
+            src: url(Beech.ttf);
+        }
+        body {
+            font-family: Beech, sans-serif;
+            margin: 0;
+        }
+        svg text {
+            text-anchor: middle;
+            dominant-baseline: mathematical;
+        }
+    </style>
+</head>
+<body style="overflow: hidden; background: #000">
+    <svg width="100vw" height="100vh" viewBox="-160 0 320 600" preserveAspectRatio="xMidYMax meet">
+        <defs>
+            <radialGradient id="rg0">
+                <stop offset="0%" stop-color="#ffd" />
+                <stop offset="100%" stop-color="#ffd" stop-opacity="0" />
+            </radialGradient>
+        </defs>
+
+        <ellipse cy="600" rx="900" ry="900" fill="url(#rg0)" />
+        <rect x="-6" y="200" width="12" height="400" fill="#888" />
+        <rect x="-6" y="200" width="12" height="6" fill="#dd0" />
+        <polygon points="-6,206 -126,206 -156,236 -126,266 -6,266" fill="#eed" />
+        <rect x="-21" y="206" width="15" height="60" fill="#f44" />
+        <text x="-72" y="236" font-size="4vh">A</text>
+        <polygon points="6,266 126,266 156,296 126,326 6,326" fill="#eed" />
+        <rect x="6" y="266" width="15" height="60" fill="#66f" />
+        <text x="72" y="296" font-size="4vh">D</text>
+        
+        <g fill-opacity="0" stroke="#000" stroke-width=".3">
+            <polyline points="-6,206 -126,206 -156,236 -126,266 -6,266" />
+            <polygon points="6,266 126,266 156,296 126,326 6,326" />
+            <rect x="-6" y="200" width="12" height="400" />
+        </g>
+        
+        <ellipse cy="800" rx="250" ry="250" fill="#6c4" />
+        <ellipse cy="800" rx="250" ry="250" fill-opacity="0" stroke="#000" stroke-width=".3" />
+    </svg>
+</body>
+</html>
